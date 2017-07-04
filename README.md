@@ -1,4 +1,4 @@
-**MongoDB+Express README**
+**MongoDB+Express 搭建多人博客**
 
 ## Express介绍
 
@@ -20,7 +20,8 @@
  2.安装mongoDB 安装完毕
  
       安装 MongoDB 很简单,去 官网 下载对应系统的 MongoDB 即可。
-      并在 mongodb 文件夹里新建 blog 文件夹作为我们博客内容的存储目录（非必须）。：
+      并在 mongodb 文件夹里新建 blog 文件夹作为我们博客内容的存储目录（非必须）。
+      
  3.运行MongoDB：
  
       进入到 bin 目录下：执行命令 mongod --dbpath ../blog/
@@ -29,13 +30,13 @@
  
  5.介绍一些常用的命令
  
-    安装express:             npm install -g express-generator
-    建立express博客目录:      express -e blog
-    安装依赖:                 cd blog  npm install
-    运行: npm start           默认运行的是 localhost:3000
-    bin 目录下运行MongoDB：   mongod --dbpath ../blog/
-    使用supervisor命令启动：  npm install -g supervisor
-    bin目录下查询MongoDB:     查询用户 mongo    use blog    db.users.find() 
+    安装express:                       npm install -g express-generator
+    建立express博客目录:                express -e blog
+    安装依赖:                           cd blog  npm install
+    运行: npm start                    默认运行的是 localhost:3000
+    bin 目录下运行MongoDB：             mongod --dbpath ../blog/
+    使用supervisor命令启动：            npm install -g supervisor
+    bin目录下查询MongoDB: 查询用户       mongo    use blog    db.users.find() 
     MongoDB中命令用于删除现有的数据库:    db.dropDatabase()
     查找博客中添加的posts 表里面的内容:   db.getCollection('posts').find({})
     
