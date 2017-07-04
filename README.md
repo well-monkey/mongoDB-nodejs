@@ -39,7 +39,34 @@
     bin目录下查询MongoDB: 查询用户       mongo    use blog    db.users.find() 
     MongoDB中命令用于删除现有的数据库:    db.dropDatabase()
     查找博客中添加的posts 表里面的内容:   db.getCollection('posts').find({})
-    
+ 
+ 6.踩过的坑
+       很多都是版本号问题，博客内容很多都是老版本的内容，所以在安装的时候最好仔细的看一下具体内容。
+       
+       
+        "mongodb": "2.2.19",
+        
+        "body-parser": "~1.17.1",
+        
+        "cookie-parser": "~1.4.3",
+        
+        "debug": "~2.6.3",
+        
+        "ejs": "~2.5.6",
+        
+        "express": "~4.15.2",
+        
+        "morgan": "~1.8.1",
+        
+        "serve-favicon": "~2.4.2",
+        
+        "express-session": "1.9.1",
+        
+        "connect-mongo": "0.8.0",
+        
+        "mongoose ": "~3.8.23"
+
+   
     
 ## 文章推荐
 
